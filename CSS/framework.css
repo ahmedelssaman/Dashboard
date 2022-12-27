@@ -1,0 +1,342 @@
+:root{
+    --blue-color:#0075ff;
+    --blue-alt-color:#0d69d5;
+    --green-color:#22c55e;
+    --red-color:#f44336;
+    --orange-color:#f59e0b;
+    --grey-color:#888;
+}
+
+/* Start Box */
+.d-flex {
+    display: flex;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.d-grid{
+    display: grid;
+}
+.gap-20{
+    gap: 20px;
+}
+
+.d-block{
+    display: block;
+}
+
+.space-between{
+    justify-content: space-between;
+}
+
+.space-both{
+    justify-content: space-evenly;
+}
+
+@media (max-width:767px) {
+    .block-mobile{
+        display: block;
+    }
+    
+}
+
+/* End Box */
+
+/*Start Padding + Margin*/
+.p-20 {
+    padding: 20px;
+}
+
+.p-0 {
+    padding: 0;
+}
+
+.p-5{
+    padding: 5px;
+}
+
+.p-10 {
+    padding: 10px;
+}
+
+.pb-10{
+    padding-bottom: 10px;
+}
+
+.p-15{
+    padding: 15px;
+}
+
+.pb-20{
+    padding-bottom: 20px;
+}
+
+.pb-30{
+    padding-bottom: 30px;
+}
+
+.pt-20{
+    padding-top: 20px;
+}
+
+.m-20 {
+    margin: 20px;
+}
+
+.m-0{
+    margin: 0;
+}
+
+.mt-0 {
+    margin-top: 0;
+}
+.mt-5{
+    margin-top: 5px;
+}
+
+.mt-10{
+    margin-top: 10px;
+}
+
+.mt-20{
+    margin-top: 20px;
+}
+
+.mt-40{
+    margin-top: 40px;
+}
+
+.mb-20{
+    margin-bottom: 20px;
+}
+
+.mb-10{
+    margin-bottom: 10px;
+}
+
+.mb-5{
+    margin-bottom: 5px;
+}
+
+.mr-40{
+    margin-right: 40px;
+}
+
+.ml-20{
+    margin-left: 20px;
+}
+
+.mr-20{
+    margin-right: 20px;
+}
+
+.mr-0{
+    margin-right: 0;
+}
+
+
+/*End Padding + Margin*/
+
+/* Start Color*/
+.bg-white {
+    background-color: white;
+}
+
+.bg-eee{
+    background-color: #eee;
+}
+
+.bg-ccc{
+    background-color: #ccc;
+}
+.bg-orange{
+    background-color: var(--orange-color);
+}
+
+.bg-red{
+    background-color: var(--red-color);
+}
+
+.bg-green{
+    background-color: var(--green-color);
+}
+
+.bg-blue{
+    background-color: var(--blue-color);
+}
+
+.c-black {
+    color: black;
+}
+
+.c-grey{
+    color: var(--grey-color);
+}
+
+.c-green{
+    color: var(--green-color);
+}
+
+.c-white{
+    color: white;
+}
+
+.c-red{
+    color: var(--red-color);
+}
+.c-777{
+color: #777;
+}
+
+
+
+/* End Color*/
+
+/*Start Position*/
+.p-relative {
+    position: relative;
+}
+
+/*End Position*/
+
+/*Start Font*/
+.txt-c {
+    text-align: center;
+}
+
+.fs-14 {
+    font-size: 14px;
+}
+
+.fs-20 {
+    font-size: 20px;
+}
+
+.fs-32{
+    font-size: 32px;
+}
+
+@media (max-width:767px) {
+    .h1-fs-mob{
+        font-size: 22px;
+    }
+}
+
+.fw-bold{
+    font-weight: bold;
+}
+@media (max-width:767px) {
+    .txt-c-mobile{
+        text-align: center;
+    }
+    
+}
+
+/*End Font*/
+
+/*Start Border*/
+.rad-6 {
+    border-radius: 6px;
+}
+
+.rad-10{
+    border-radius: 10px;
+}
+
+/*End Border*/
+
+/*Start Width*/
+.w-full {
+    width: 100%;
+}
+
+.w-80{
+    width: 80px;
+}
+
+.minw-200{
+    min-width: 200px;
+}
+
+.h-80{
+    height: 80px;
+}
+
+/*End Width*/
+
+/*Start Border*/
+.bb-1{
+    border-bottom: 1px solid #eee;
+}
+/*End Border*/
+
+/*Start Components*/
+.between-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*End Components*/
+
+
+
+
+/*Start Media*/
+@media(max-width:767p) {
+    .hide-mobile {
+        display: none;
+    }
+}
+
+/*End Media*/
+
+/* Start Toggle-Checkbox */
+.toggle-checkbox{
+    -webkit-appearance: none;
+    appearance: none;
+}
+.toggle-switsh{
+    background-color: #ccc;
+    width: 78px;
+    height: 32px;
+    border-radius: 16px;
+    position: relative;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.toggle-switsh::before{
+    font-family: var(--fa-style-family-classic);
+    content: "\f00d";
+    font-weight: 900;
+    background-color: white;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    border-radius: 50%;
+    top: 4px;
+    left: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #aaa;
+    transition: 0.3s;
+}
+
+.toggle-checkbox:checked + .toggle-switsh{
+    background-color: var(--blue-color);
+}
+
+.toggle-checkbox:checked + .toggle-switsh::before{
+    content: "\f00c";
+    left: 50px;
+    color: var(--blue-color);
+}
+
+
+
+
+/* End Toggtle-Checkbox */
